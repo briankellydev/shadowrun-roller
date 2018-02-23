@@ -1,0 +1,20 @@
+<div>
+  <div class="menu-button" *ngFor="let number of numbersOfDice" (click)="roll(number)">
+    <span>{{number}}</span>
+  </div>
+  <div class="modal" *ngIf="showModal">
+    <div [ngStyle]="{'background': backgroundStyle}" class="modal-inner">
+      <div *ngIf="!rollResult.glitch && !rollResult.criticalGlitch">
+        <h1>NUMBER OF HITS</h1>
+        <h1>{{rollResult.numberOfHits}}</h1>
+      </div>
+      <div *ngIf="rollResult.glitch && !rollResult.criticalGlitch">
+        <h1 class="red">GLITCH!</h1>
+      </div>
+      <div *ngIf="rollResult.criticalGlitch">
+        <h1 class="red">CRITICAL GLITCH!</h1>
+      </div>
+      <button (click)="showModal = false">CLOSE</button>
+    </div>
+  </div>
+</div>
