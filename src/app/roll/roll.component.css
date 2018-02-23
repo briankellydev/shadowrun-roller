@@ -1,16 +1,8 @@
 .menu-button {
   border: 1px solid #55FF55;
   border-radius: 5px;
-  width: 15vw;
-  height: 15vw;
-  margin-left: 4vw;
-  margin-top: 4vw;
   text-align: center;
   float: left;
-}
-span {
-  font-size: 10vw;
-  line-height: 15vw;
 }
 
 .modal {
@@ -24,12 +16,10 @@ span {
 }
 
 .modal-inner {
-  width: 50vw;
   position: absolute;
   text-align: center;
   padding: 1vw;
   top: 10vh;
-  left: 25vw;
   background: url('glitch.gif');
   background-size: 100% auto;
   background-position-y: 30%;
@@ -48,4 +38,55 @@ button {
   width: 30%;
   height: 5vw;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  .menu-button {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 4vw;
+    margin-top: 4vw;
+  }
+  span {
+    font-size: 10vw;
+    line-height: 15vw;
+  }
+  .modal-inner {
+    width: 50vw;
+    left: 25vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu-button {
+    width: 20vw;
+    height: 20vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+  }
+  span {
+    font-size: 10vw;
+    line-height: 15vw;
+  }
+  .modal-inner {
+    width: 75vw;
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-button {
+    width: 30vw;
+    height: 10vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+  }
+  span {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+  .modal-inner {
+    width: 80vw;
+    left: 9vw;
+  }
 }

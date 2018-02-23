@@ -23,7 +23,6 @@ export class RollComponent implements OnInit {
 
   roll(number: number) {
     this.rollResult = this.rollService.rollDice(number);
-    console.log(this.rollResult);
     this.backgroundStyle = this.rollResult.glitch ? null : 'black';
     this.showModal = true;
   }
