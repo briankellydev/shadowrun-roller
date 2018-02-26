@@ -6,3 +6,20 @@ body {
   color: #55FF55;
   font-family: 'Orbitron', sans-serif;
 }
+
+button {
+  color: #55FF55;
+  border: 1px solid #55FF55;
+  background: black;
+  width: 30%;
+  height: 5vw;
+  border-radius: 5px;
+}
+
+.selected-item {
+  background: #55FF55;
+  color: black;
+}
+.hidden {
+  display: none;
+}

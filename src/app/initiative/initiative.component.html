@@ -1,0 +1,15 @@
+<div>
+  <div class="input" *ngIf="showInput">
+      <div *ngFor="let person of initList">
+         Name: <input class="name" type="text" [(ngModel)]="person.name"> 
+         Score: <input type="number" [(ngModel)]="person.score" min="1" max="99"> 
+      </div>
+      <button (click)="compile()">Compile</button>
+  </div>
+  <div class="results" *ngIf="!showInput">
+      <div *ngFor="let person of compiledList" (click)="selectedItem = person.name" [ngClass]="{'selected-item': person.name === selectedItem, 'hidden': !person.name}">
+          {{person.name}}
+      </div>
+      <button (click)="startOver()">Start Over</button>
+  </div>
+</div>

@@ -1,3 +1,20 @@
 h1 {
   text-align: center;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vw;
+  text-align: center;
+}
+.footer-menu-item {
+  border: 1px solid #55FF55;
+  background: black;
+  color: #55FF55;
+  width: 49.5%;
+  height: 100%;
+  float: left;
+}

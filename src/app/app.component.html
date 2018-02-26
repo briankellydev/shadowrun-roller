@@ -1,6 +1,11 @@
 <div>
   <h1>SHADOWRUN 5E ROLLDECK</h1>
-  <roll-component></roll-component>
+  <roll-component *ngIf="itemToShow === 'roll'"></roll-component>
+  <initiative-component *ngIf="itemToShow === 'initiative'"></initiative-component>
+  <footer>
+    <div class="footer-menu-item" (click)="itemToShow = 'roll'" [ngClass]="{'selected-item': itemToShow === 'roll'}"><h1>Roll</h1></div>
+    <div class="footer-menu-item" (click)="itemToShow = 'initiative'" [ngClass]="{'selected-item': itemToShow === 'initiative'}"><h1>Initiative Tracker</h1></div>
+  </footer>
 </div>
 
 

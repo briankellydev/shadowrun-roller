@@ -31,15 +31,6 @@
   color: red;
 }
 
-button {
-  color: #55FF55;
-  border: 1px solid #55FF55;
-  background: black;
-  width: 30%;
-  height: 5vw;
-  border-radius: 5px;
-}
-
 @media screen and (min-width: 769px) {
   .menu-button {
     width: 15vw;
