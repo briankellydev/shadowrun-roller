@@ -1,0 +1,36 @@
+button {
+  margin-top: 2vw;
+}
+
+#initiative-component {
+  margin: auto;
+  text-align: center;
+}
+
+.results div {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+@media screen and (min-width: 769px) {
+  #initiative-component {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #initiative-component {
+    width: 80vw;
+    font-size: 4vw;
+  }
+  input {
+    height: 4vw;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #initiative-component {
+    width: 100vw;
+  }
+}

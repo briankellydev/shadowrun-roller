@@ -7,14 +7,14 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-button {
+button, input {
   color: #55FF55;
   border: 1px solid #55FF55;
   background: black;
-  width: 30%;
-  height: 5vw;
   border-radius: 5px;
 }
+
+
 
 .selected-item {
   background: #55FF55;
@@ -22,4 +22,26 @@ button {
 }
 .hidden {
   display: none;
+}
+
+@media screen and (min-width: 769px) {
+  button {
+    width: 30%;
+    height: 5vw;
+  }
+}
+  
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  button {
+    width: 40%;
+    height: 10vw;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    width: 40%;
+    height: 15vw;
+  }
 }

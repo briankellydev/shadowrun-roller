@@ -7,14 +7,41 @@ footer {
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 5vw;
   text-align: center;
 }
 .footer-menu-item {
   border: 1px solid #55FF55;
   background: black;
   color: #55FF55;
-  width: 49.5%;
   height: 100%;
+  width: 49%;
   float: left;
+}
+.footer-menu-item.selected-item {
+  background: #55FF55;
+  color: black;
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    height: 5vw;
+  }
+}
+  
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  footer {
+    height: 15vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    height: 15vw;
+    padding-bottom: 2vw;
+  }
+  .footer-menu-item h1 {
+    font-size: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  }
 }

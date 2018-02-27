@@ -33,14 +33,14 @@
 
 @media screen and (min-width: 769px) {
   .menu-button {
-    width: 15vw;
-    height: 15vw;
-    margin-left: 4vw;
-    margin-top: 4vw;
+    width: 7.5vw;
+    height: 7.5vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
   }
   span {
-    font-size: 8vw;
-    line-height: 15vw;
+    font-size: 4vw;
+    line-height: 7.5vw;
   }
   .modal-inner {
     width: 50vw;
